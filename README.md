@@ -3,7 +3,7 @@
 > **Foodies** is a modern, full-featured recipe management and social food-sharing app built with **React**, **Vite**, and **Redux Toolkit**.
 
 [![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE.MD)
-[![API Docs](https://img.shields.io/badge/api-docs-blue?logo=swagger)](http://localhost:3000/api-docs/)
+[![API Docs](https://img.shields.io/badge/api-docs-blue?logo=swagger)](https://foodies-nodejs.onrender.com/api-docs/)
 
 > 💝 Discover, share, and organize your favorite recipes all in one place — Foodies makes food fun and social again!
 
@@ -133,7 +133,7 @@ We provide an interactive Swagger UI for exploring and testing all API endpoints
 📚 **API Documentation**:
 
 
-> 👉 [http://localhost:3000/api-docs/](http://localhost:3000/api-docs/)
+> 👉 [https://foodies-nodejs.onrender.com/api-docs/](https://foodies-nodejs.onrender.com/api-docs/)
 
 ---
 
