@@ -1,8 +1,8 @@
 import api from "./api";
 
-export const getRecipesApi = async ({ category, page, ingredient, area, limit }) => {
+export const getRecipeListApi = async ({ category, page, ingredient, area, limit }) => {
   try {
-    const response = await api.get(`recipes`, {
+    const response = await api.get(`recipes/list`, {
       params: {
         category,
         page,

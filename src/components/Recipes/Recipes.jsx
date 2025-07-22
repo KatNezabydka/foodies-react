@@ -11,7 +11,7 @@ import { selectCategoryByName } from "@/redux/categories/selectors";
 import { showAllRecipesSelector } from "@/redux/recipes/selectors";
 import { extractParamsFromUrl } from "@/utils/extractParamsFromUrl";
 
-import { getRecipesApi } from "../../api/recipes";
+import { getRecipeListApi } from "../../api/recipes";
 import Icons from "../../assets/sprite.svg";
 import Meta from "../Meta/Meta";
 import RecipeFilters from "../RecipeFilters/RecipeFilters";
@@ -47,7 +47,7 @@ function Recipes() {
     setIsLoading(true);
     const params = extractParamsFromUrl(searchParams);
     try {
-      const recipes = await getRecipesApi({ ...params, limit: limitPage });
+      const recipes = await getRecipeListApi({ ...params, limit: limitPage });
       setRecipes(recipes.data);
       setPagination(recipes.pagination);
     } catch (error) {
@@ -72,8 +72,6 @@ function Recipes() {
       if (searchParams.get("ingredient")) params.ingredient = searchParams.get("ingredient");
       if (searchParams.get("area")) params.area = searchParams.get("area");
       params.page = page;
-      // TODO: REMOVE THIS AFTER TESTING IT WAS USED BEFORE BUT I THINK IT IS NOT NEEDED
-      // getRecipesApi({ ...params, limit: limitPage });
       setSearchParams(params);
     }
   };
